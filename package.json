@@ -1,6 +1,6 @@
 {
-  "name": "@smodin/fast-text-language-detection",
-  "version": "0.2.3",
+  "name": "bestme/fast-text-language-detection",
+  "version": "0.1.0",
   "description": "Language detection with facebook fast-text model",
   "homepage": "https://github.com/smodin-io/fast-text-language-detection",
   "keywords": [
@@ -15,15 +15,10 @@
     "dist"
   ],
   "scripts": {
-    "install": "npm-install-fetch",
+    "install": "node -e \"const fetch = require('node-fetch'); fetch('https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin').then(res => res.buffer()).then(buffer => require('fs').writeFileSync('./model/fast-text-lid-model.bin', buffer))\"",
     "dev": "rollup -c -w",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "npm-install-fetch": {
-    "name": "(@smodin/fast-text-language-detection): FastText LID-176 model",
-    "input": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin",
-    "output": "model/fast-text-lid-model.bin"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
@@ -36,7 +31,7 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "fast-text": "^1.0.1",
-    "npm-install-fetch": "^1.3.3"
+    "fast-text": "^1.0.3",
+    "node-fetch": "3.3.1"
   }
 }
