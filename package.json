@@ -16,7 +16,7 @@
   ],
   "repository": {
   "type": "git",
-    "url": "https://github.com/your-username/your-repository"
+    "url": "https://github.com/genesys225/fast-text-language-detection"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
