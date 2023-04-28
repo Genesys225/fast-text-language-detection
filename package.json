@@ -1,6 +1,6 @@
 {
   "name": "@genesys225/fast-text-language-detection",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Language detection with facebook fast-text model",
   "homepage": "https://github.com/smodin-io/fast-text-language-detection",
   "keywords": [
